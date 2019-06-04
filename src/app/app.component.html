@@ -1,0 +1,28 @@
+<div id="outerDiv" onkeypress="myFunction(event)">
+  <div id="backgroundImg"></div>
+  <h1 style="text-align: center;">Bill's Trivia Pursuit</h1>
+  <div [hidden]="!hideInnerDiv" id="questionBox">
+      <h2 style="text-align: center;">{{currentQuestion}}</h2>
+      <h2 style="text-align: center;">Score: {{currentScore}} / {{currentQuestionNumber}}</h2>
+      <div class="flex-container">
+        <button (click)="selectAnswer(0)">{{this.answers[0]}}</button>
+        <button (click)="selectAnswer(1)">{{this.answers[1]}}</button>
+        <button (click)="selectAnswer(2)">{{this.answers[2]}}</button>
+        <button (click)="selectAnswer(3)">{{this.answers[3]}}</button>
+      </div>
+    </div>
+    <div [hidden]="answerOutcome === ''" id="answerOutcomeDiv">
+      <h3 style="text-align: center;">
+          {{answerOutcome}}
+      </h3>
+      <h3 style="text-align: center;" [hidden]="answerOutcome === 'correct'">
+        The correct answer is: {{correctAnswer}}
+      </h3>
+    </div>
+    <div class="flex-container">
+      <button [hidden]="gameInProgress === true" id="startButton" (click)='getQuestions()' (click)="nextQuestion()">Start</button>
+      <button [hidden]="!showNextButton" id="nextButton" (click)="nextQuestion()">Next</button>
+    </div>
+    <h3 style="text-align: center;" [hidden]="gameOver === false">The game is over, refresh to play again.</h3>
+</div>
+
