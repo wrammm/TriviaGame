@@ -1,0 +1,9 @@
+<div [hidden]="singlePlayer === true || twoPlayer === true">
+        <h1 style="text-align: center;">Bill's Trivia Pursuit</h1>
+        <div style= "display:flex; justify-content: center;">
+            <button (click)="singlePlayerClicked()" id="startButton">Single Player</button>
+            <button (click)="twoPlayerClicked()" id="startButton">Two Player</button>
+        </div>
+   </div>
+<app-single-player [hidden]="singlePlayer === false"></app-single-player>
+<app-two-player [hidden]="twoPlayer === false"></app-two-player>

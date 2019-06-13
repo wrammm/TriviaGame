@@ -1,0 +1,87 @@
+#startButton {
+	background-color: rgb(38, 71, 39); /* Green */
+	border: none;
+	border-radius: 12px;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+#nextButton {
+	background-color: blue; /* Green */
+	border: none;
+	border-radius: 12px;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 400px;
+}
+#quitButton {
+	background-color: red; /* Green */
+	border: none;
+	border-radius: 12px;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+#countdown {
+	font-size: 1.875em;
+}
+#outerdiv {
+	display: flex;
+	flex-flow: row wrap;
+}
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+#scoreBoard {
+	display: flex;
+	justify-content: center;
+	font-size: 1.875em;
+}
+
+#scoreBoard > div {
+	padding: 20px;
+	text-align: center;
+}
+
+#title {
+	text-align: center;
+}
+@media only screen and (max-width: 600px) {
+	#title {
+		display: none;
+	}
+	#questionButton {
+		padding: 5px !important;
+		font-size: 20px;
+	}
+	#scoreBoard > div {
+		padding: 20px;
+		text-align: center;
+		font-size: 18px;
+	}
+	#player1 {
+		background-color: coral;
+		border-radius: 15px 15px 15px 15px;
+	}
+	#player2 {
+		background-color: coral;
+		border-radius: 15px 15px 15px 15px;
+	}
+}
+
+.flex-container > button {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+}

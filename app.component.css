@@ -1,0 +1,51 @@
+#startButton {
+	background-color: rgb(38, 71, 39); /* Green */
+	border: none;
+	border-radius: 12px;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+#nextButton {
+	background-color: blue; /* Green */
+	border: none;
+	border-radius: 12px;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 400px;
+}
+#quitButton {
+	background-color: red; /* Green */
+	border: none;
+	border-radius: 12px;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+#outerdiv {
+	display: flex;
+}
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-container > button {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+	height: 100%;
+}
+/* #backgroundImg {
+	width: 1827px;
+	height: 270px;
+	background-image: url('../assets/gradFunny.PNG');
+} */
