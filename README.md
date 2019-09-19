@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
+## About
+
+This was a personal project for Billy that came into fruition after he stumbled upon Open Trivia Database API. Together with his love for trivia and knowledge of Angular, he went to work, first creating a simple single-player version of the game. After the thought arose that it needed a more competitive aspect, he then created a two-player version. This web application works both on desktop and mobile. The single player version is pretty basic where you see how many questions out of 10 you can get correct. The two-player version is a bit more complex, involving time limits, buzzers for each person, random player selections after the time limit is up, and randomly generated point values for each question. Feel free to check it out here: https://billstriviapursuit.firebaseapp.com.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
